@@ -7,7 +7,7 @@ services:
     volumes:
       - "influxdb-data:/var/lib/influxdb"
     environment:
-      - PRE_CREATE_DB=cadvisor
+      - INFLUXDB_DB=cadvisor
     networks:
       - monitoring-tier
     deploy:
